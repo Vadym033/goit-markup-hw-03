@@ -41,7 +41,6 @@ address {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid red;
 }
 
 .link {
@@ -52,13 +51,23 @@ address {
 /*---------------------------------*/
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 24px;
+}
+
+.header-container {
+  border-bottom: 1px solid #e7e9fc;
+  display: flex;
+  align-items: center;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
 }
 
 .header-logo span {
   color: #2e2f42;
   font-family: "Raleway", sans-serif;
+  margin-right: 76px;
 }
 
 .header-logo {
@@ -71,12 +80,19 @@ address {
   text-transform: uppercase;
 }
 
+.header-menu-list {
+  display: flex;
+  gap: 40px;
+}
+
 .header-menu-link {
   color: #2e2f42;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding: 24px 0;
+  display: block;
 }
 
 .header-menu-link:hover,
@@ -86,6 +102,12 @@ address {
 
 .header-address {
   font-style: normal;
+  margin-left: auto;
+}
+
+.header-address-list {
+  display: flex;
+  gap: 40px;
 }
 
 .header-address-link {
@@ -109,7 +131,7 @@ address {
 
 .hero-container {
   background-color: #2e2f42;
-  padding: 191px 472px 185px;
+  padding: 188px 316px 0;
 }
 
 .title {
@@ -119,8 +141,15 @@ address {
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  width: 100%;
   max-width: 496px;
   margin: 0 auto 48px;
+}
+
+.hero-button {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 185px;
 }
 
 .button-title-orderservice:hover,
@@ -138,13 +167,14 @@ address {
   letter-spacing: 0.04em;
   cursor: pointer;
   background-color: #4d5ae5;
+  padding: 16px 32px;
 }
 
 /*----------ourbenefits------------*/
 /*---------------------------*/
 
 .section-ourbenefits {
-  padding: 123px 0 120px;
+  padding: 120px 0;
 }
 
 .title-ourbenefits {
@@ -152,6 +182,8 @@ address {
 }
 
 .ourbenefits-list {
+  display: flex;
+  justify-content: center;
 }
 
 .ourbenefits-item {
@@ -181,22 +213,27 @@ address {
 
 .ourteam-container {
   background-color: #f4f4fd;
-  padding: 120px 156px;
+  padding: 120px;
 }
 
 .ourteam-title {
   color: #2e2f42;
   text-align: center;
+  white-space: nowrap;
   font-size: 36px;
   font-weight: 700;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   margin: 0 auto 72px;
+  width: 100%;
   max-width: 162px;
 }
 
 .ourteam-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
 }
 
 .ourteam-item {
@@ -204,7 +241,13 @@ address {
 }
 
 .ourteam-img {
-  padding-bottom: 32px;
+}
+.ourteam-item-border {
+  padding: 32px 16px;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .ourteam-member {
@@ -224,17 +267,19 @@ address {
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.32px;
-  padding-bottom: 32px;
 }
 
 /*--------ourportfolio--------*/
 
 .ourportfolio {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .ourportfolio-title {
   color: #2e2f42;
   text-align: center;
+  white-space: nowrap;
   font-family: Roboto;
   font-size: 36px;
   font-weight: 700;
@@ -247,13 +292,20 @@ address {
 }
 
 .ourportfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
 }
 
 .ourportfolio-item {
 }
 
+.ourportfolio-item-border {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+}
+
 .ourportfolio-img {
-  padding-bottom: 32px;
 }
 
 .ourportfolio-subtitle {
@@ -273,7 +325,6 @@ address {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding-bottom: 32px;
 }
 
 /*-------------footer----------------*/
@@ -283,7 +334,7 @@ address {
 
 .footer-container {
   background: #2e2f42;
-  padding: 101.5px 1020px 100px 156px;
+  padding: 100px 600px 100px 141px;
 }
 
 .footer-logo-studio {
@@ -299,7 +350,10 @@ address {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  padding-bottom: 17.5px;
+}
+.footer-container-text {
+  width: 100%;
+  max-width: 264px;
 }
 
 .footer-text {
@@ -308,5 +362,5 @@ address {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  max-width: 264px;
+  padding-top: 16px;
 }

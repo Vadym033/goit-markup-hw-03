@@ -15,6 +15,9 @@ h6 {
   margin-bottom: 0;
 }
 
+img {
+  display: block;
+}
 a {
   text-decoration: none;
   color: currentColor;
@@ -127,11 +130,13 @@ address {
 /*---------------------------------*/
 
 .section-title {
+  background-color: #2e2f42;
+  padding: 188px 0;
+  max-width: 1158px;
+  margin: 0 auto;
 }
 
 .hero-container {
-  background-color: #2e2f42;
-  padding: 188px 316px 0;
 }
 
 .title {
@@ -149,25 +154,28 @@ address {
 .hero-button {
   display: flex;
   justify-content: center;
-  padding-bottom: 185px;
 }
 
 .button-title-orderservice:hover,
 .button-title-orderservice:focus {
   background-color: #404bbf;
-  cursor: pointer;
 }
 
 .button-title-orderservice {
   color: #fff;
   font-family: "Roboto", sans-serif;
+  display: block;
+  cursor: pointer;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  cursor: pointer;
   background-color: #4d5ae5;
   padding: 16px 32px;
+  min-width: 169px;
+  height: 56px;
+  border-radius: 4px;
+  border: none;
 }
 
 /*----------ourbenefits------------*/
@@ -178,15 +186,27 @@ address {
 }
 
 .title-ourbenefits {
-  display: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 
 .ourbenefits-list {
   display: flex;
   justify-content: center;
+  gap: 24px;
 }
 
 .ourbenefits-item {
+  width: calc((100% - 72px) / 4);
 }
 
 .subtitle-ourbenefits {
@@ -209,11 +229,14 @@ address {
 /*-----------ourteam----------*/
 
 .ourteam {
+  background-color: #f4f4fd;
+  padding: 120px 0;
+  max-width: 1158px;
+  margin: 0 auto;
 }
 
 .ourteam-container {
-  background-color: #f4f4fd;
-  padding: 120px;
+  padding: 32px 0;
 }
 
 .ourteam-title {
@@ -238,16 +261,14 @@ address {
 
 .ourteam-item {
   background-color: #ffffff;
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .ourteam-img {
 }
 .ourteam-item-border {
   padding: 32px 16px;
-  border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .ourteam-member {
@@ -257,7 +278,7 @@ address {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .ourteam-profession {
@@ -288,13 +309,14 @@ address {
   text-transform: capitalize;
   max-width: 218px;
   margin: 0 auto;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .ourportfolio-list {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
+  row-gap: 48px;
 }
 
 .ourportfolio-item {
@@ -303,6 +325,7 @@ address {
 .ourportfolio-item-border {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
+  border-top: none;
 }
 
 .ourportfolio-img {
@@ -315,7 +338,7 @@ address {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .ourportfolio-text {
@@ -330,14 +353,16 @@ address {
 /*-------------footer----------------*/
 
 .footer {
+  padding: 100px 0;
+  background: #2e2f42;
+  max-width: 1158px;
+  margin: 0 auto;
 }
 
 .footer-container {
-  background: #2e2f42;
-  padding: 100px 600px 100px 141px;
 }
 
-.footer-logo-studio {
+.footer-logo span {
   color: #f4f4fd;
   font-family: "Raleway", sans-serif;
 }
@@ -350,10 +375,8 @@ address {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-}
-.footer-container-text {
-  width: 100%;
-  max-width: 264px;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer-text {
@@ -362,5 +385,6 @@ address {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding-top: 16px;
+  width: 100%;
+  max-width: 264px;
 }

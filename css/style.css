@@ -236,7 +236,6 @@ address {
 }
 
 .ourteam-container {
-  padding: 32px 0 32px;
 }
 
 .ourteam-title {
@@ -268,7 +267,7 @@ address {
 .ourteam-img {
 }
 .ourteam-item-border {
-  padding: 32px 16px;
+  padding: 32px 0;
 }
 
 .ourteam-member {

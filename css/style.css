@@ -54,10 +54,12 @@ address {
 /*---------------------------------*/
 
 .header {
+  border-bottom: 1px solid #e7e9fc;
+  max-width: 1158px;
+  margin: 0 auto;
 }
 
 .header-container {
-  border-bottom: 1px solid #e7e9fc;
   display: flex;
   align-items: center;
 }
@@ -70,7 +72,6 @@ address {
 .header-logo span {
   color: #2e2f42;
   font-family: "Raleway", sans-serif;
-  margin-right: 76px;
 }
 
 .header-logo {
@@ -81,6 +82,7 @@ address {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 
 .header-menu-list {
@@ -152,8 +154,6 @@ address {
 }
 
 .hero-button {
-  display: flex;
-  justify-content: center;
 }
 
 .button-title-orderservice:hover,
@@ -165,6 +165,7 @@ address {
   color: #fff;
   font-family: "Roboto", sans-serif;
   display: block;
+  margin: auto;
   cursor: pointer;
   font-size: 16px;
   font-weight: 500;
@@ -193,10 +194,12 @@ address {
   width: 1px;
   height: 1px;
   margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
   border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .ourbenefits-list {
@@ -236,7 +239,7 @@ address {
 }
 
 .ourteam-container {
-  padding: 32px 0;
+  padding: 32px 0 32px;
 }
 
 .ourteam-title {

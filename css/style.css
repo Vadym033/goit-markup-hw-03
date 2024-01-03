@@ -55,7 +55,6 @@ address {
 
 .header {
   border-bottom: 1px solid #e7e9fc;
-  max-width: 1158px;
   margin: 0 auto;
 }
 
@@ -134,7 +133,6 @@ address {
 .section-title {
   background-color: #2e2f42;
   padding: 188px 0;
-  max-width: 1158px;
   margin: 0 auto;
 }
 
@@ -231,7 +229,6 @@ address {
 .ourteam {
   background-color: #f4f4fd;
   padding: 120px 0;
-  max-width: 1158px;
   margin: 0 auto;
 }
 
@@ -354,7 +351,6 @@ address {
 .footer {
   padding: 100px 0;
   background: #2e2f42;
-  max-width: 1158px;
   margin: 0 auto;
 }
 
